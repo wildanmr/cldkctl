@@ -5,7 +5,7 @@
 class Cldkctl < Formula
   desc "A CLI tool for managing cloud infrastructure"
   homepage "https://github.com/wildanmr/cldkctl"
-  version "0.0.10-DEVELOPMENT"
+  version "0.0.11-DEVELOPMENT"
   license "MIT"
 
   depends_on "go"
@@ -13,16 +13,16 @@ class Cldkctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wildanmr/cldkctl/releases/download/v0.0.10-DEVELOPMENT/cldkctl-0.0.10-DEVELOPMENT_Darwin_x86_64.tar.gz"
-      sha256 "39253493553a7022c1d99c54f32753cfacb14c8d9eb60aa480472bf47dd1821d"
+      url "https://github.com/wildanmr/cldkctl/releases/download/v0.0.11-DEVELOPMENT/cldkctl-0.0.11-DEVELOPMENT_Darwin_x86_64.tar.gz"
+      sha256 "8eca7991de0bc0b8ee763d314259c0b6bcaf2c28274fa008a17ced4775ed5c1f"
 
       def install
         bin.install "cldkctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wildanmr/cldkctl/releases/download/v0.0.10-DEVELOPMENT/cldkctl-0.0.10-DEVELOPMENT_Darwin_arm64.tar.gz"
-      sha256 "cc0828a1c6d845f485b66989237841be1729c2519299219f6a830835bf707fec"
+      url "https://github.com/wildanmr/cldkctl/releases/download/v0.0.11-DEVELOPMENT/cldkctl-0.0.11-DEVELOPMENT_Darwin_arm64.tar.gz"
+      sha256 "3ca511cfbdd7797402e947afbb76cc69110d2c8c1bc6e192653dc9d9c4cf69af"
 
       def install
         bin.install "cldkctl"
@@ -33,8 +33,8 @@ class Cldkctl < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/wildanmr/cldkctl/releases/download/v0.0.10-DEVELOPMENT/cldkctl-0.0.10-DEVELOPMENT_Linux_x86_64.tar.gz"
-        sha256 "a84ffb2c4213fae7211b9b6956e5e8f5994eedd263888a23aab24c1c10388c9c"
+        url "https://github.com/wildanmr/cldkctl/releases/download/v0.0.11-DEVELOPMENT/cldkctl-0.0.11-DEVELOPMENT_Linux_x86_64.tar.gz"
+        sha256 "07e749723394708e858cc2eef46bfdc6b4ef0422da3c6465c0462b748ece6d31"
 
         def install
           bin.install "cldkctl"
@@ -43,8 +43,8 @@ class Cldkctl < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/wildanmr/cldkctl/releases/download/v0.0.10-DEVELOPMENT/cldkctl-0.0.10-DEVELOPMENT_Linux_arm64.tar.gz"
-        sha256 "6c69e8aab0ead8b2c541aef12f6f5d564d33d34ef1f00f3da063d8266037bfc3"
+        url "https://github.com/wildanmr/cldkctl/releases/download/v0.0.11-DEVELOPMENT/cldkctl-0.0.11-DEVELOPMENT_Linux_arm64.tar.gz"
+        sha256 "b7c1878c46b4714c0f52ae7cf69117cd404763a797eb4fabf800088373d947a5"
 
         def install
           bin.install "cldkctl"
